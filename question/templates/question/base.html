@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Appsimpect</title>
+  <link rel="stylesheet" type="" href="{% static 'question/css/bootstrap.css'%}">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="text-center alert alert-info">
+      <h4>GENRAL QUESTION AND ANSWER </h4>
+      
+    </div>
+    {% block content %} {% endblock content %}
+  </div>
+  
+  <script src="{% static 'question/js/jquery.js'%}"></script>
+  <script src="{% static 'question/js/popper.js'%}"></script>
+  <script src="{% static 'question/js/bootstrap.js'%}"></script>
+</body>
+</html>
