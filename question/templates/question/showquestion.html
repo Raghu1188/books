@@ -19,6 +19,7 @@
          <th scope="col">ID</th>
          <th scope="col">Question</th>
          <th scope="col">Answer</th>
+         <th scope="col">Action</th>
        </tr>
      </thead>
      <tbody>
@@ -27,6 +28,9 @@
          <th scope="row">{{st.id}}</th>
          <td>{{st.Ques}}</td>
          <td>{{st.Answ}}</td>
+         <td>
+           <a href="{% url 'updatedata' st.id %}" class="btn btn-warning btn-sm">Edit</a>
+         </td>
        </tr>
       {% endfor %}
      </tbody>
