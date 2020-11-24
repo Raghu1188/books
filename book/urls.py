@@ -19,4 +19,5 @@ from question import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Show_All , name = 'showques'),
+    path('<int:id>/', views.update_data, name="updatedata"),
 ]
